@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2021-01-12T07:58:52-06:00
-draft: true
+draft: false
 ---
 
 GPG Fingerprint: BDB9 E728 4107 317D AE0D  A261 9129 BD07 C350 9CED

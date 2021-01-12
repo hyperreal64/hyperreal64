@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-01-12T07:45:45-06:00
-draft: true
+draft: false
 ---
 
 I'm Jeffrey Serio. Here are a few details about me:
