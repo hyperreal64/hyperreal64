@@ -1,0 +1,42 @@
+baseURL = "https://hyperreal64.netlify.app"
+languageCode = "en-us"
+title = "/home/hyperreal64"
+theme = "terminal"
+
+[params]
+    contentTypeName = "posts"
+    themeColor = "blue"
+    showMenuItems = 4
+    fullWidthTheme = false
+    centerTheme = true
+    showLastUpdated = true
+
+[languages]
+    [languages.en]
+        languageName = "English"
+        title = "/home/hyperreal64"
+        subtitle = "Web home of Jeffrey Serio"
+        missingContentMessage = "Page not found..."
+
+        [languages.en.params.logo]
+            logoText = "/home/hyperreal64"
+            logoHomeLink = "/"
+
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                identifier = "about"
+                name = "About"
+                url = "/about"
+            [[languages.en.menu.main]]
+                identifier = "techne"
+                name = "Techne: A personal reference base"
+                url = "https://hyperreal64.github.io"
+            [[languages.en.menu.main]]
+                identifier = "contact"
+                name = "Contact"
+                url = "/contact"
+            [[languages.en.menu.main]]
+                identifier = "github"
+                name = "GitHub"
+                url = "https://github.com/hyperreal64"
+
