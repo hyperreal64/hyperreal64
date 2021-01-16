@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>/home/hyperreal64</title>
+    <link>https://hyperreal64.netlify.app/</link>
+    <description>Recent content on /home/hyperreal64</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Jan 2021 10:29:20 -0600</lastBuildDate><atom:link href="https://hyperreal64.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Guess on the TES VI Clue</title>
+      <link>https://hyperreal64.netlify.app/posts/tes6-clue/</link>
+      <pubDate>Sat, 16 Jan 2021 10:29:20 -0600</pubDate>
+      
+      <guid>https://hyperreal64.netlify.app/posts/tes6-clue/</guid>
+      <description>The Elder Scrolls official Twitter account posted the image below, saying: &amp;ldquo;Transcribe the past and map the future.&amp;rdquo; The three lights placed on the map are supposed to be clues as to the setting of TES VI.
+The top left light is right at the location of the Katariah, the Emperor&amp;rsquo;s flagship moored in the Solitude inlet during the events of TES V: Skyrim. This is where the Emperor is assassinated by the Dark Brotherhood, at the hands of the Last Dragonborn.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://hyperreal64.netlify.app/contact/</link>
+      <pubDate>Tue, 12 Jan 2021 07:58:52 -0600</pubDate>
+      
+      <guid>https://hyperreal64.netlify.app/contact/</guid>
+      <description>GPG Fingerprint: BDB9 E728 4107 317D AE0D A261 9129 BD07 C350 9CED
+   Platform Handle     Email hyperreal64(AT)pm(DOT)me   Github hyperreal64   Fedora (pagure.io) hyperreal   Discord hyperreal#4715   Twitter @hyperreal64   Facebook serio.jeffrey   IRC hyperreal on Freenode and tilde.verse    </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://hyperreal64.netlify.app/about/</link>
+      <pubDate>Tue, 12 Jan 2021 07:45:45 -0600</pubDate>
+      
+      <guid>https://hyperreal64.netlify.app/about/</guid>
+      <description>I&amp;rsquo;m Jeffrey Serio. Here are a few details about me:
+ Based in the Chicago area Shy, sensitive, introverted, sentimental I&amp;rsquo;m autistic Some of my favorite things are open source software, diversity, free culture, DevOps, automation, information freedom, programming, philosophy, video games, and coffee. Academia and science fanboy I dislike monocultures, non-consensual power structures, and institutionalized closed-mindedness. A notable quirk of mine is that some aspects of my personality are canine-like.</description>
+    </item>
+    
+  </channel>
+</rss>
