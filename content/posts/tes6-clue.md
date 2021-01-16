@@ -6,7 +6,7 @@ draft: false
 
 The [Elder Scrolls official Twitter account](https://twitter.com/ElderScrolls/status/1344674735901339648) posted the image below, saying: "Transcribe the past and map the future." The three lights placed on the map are supposed to be clues as to the setting of TES VI.
 
-![TES VI Clue](/static/tes6-clue-map.jpg)
+![TES VI Clue](https://pbs.twimg.com/media/Eqk-iwuWMAUsXbW?format=jpg&name=4096x4096)
 
 The top left light is right at the location of the Katariah, the Emperor's flagship moored in the Solitude inlet during the events of TES V: Skyrim. This is where the Emperor is assassinated by the Dark Brotherhood, at the hands of the [Last Dragonborn](https://en.uesp.net/wiki/Lore:Dragonborn). This could symbolize the death of the Empire.
 
