@@ -8,7 +8,7 @@ I'm Jeffrey Serio. Here are a few details about me:
 * Based in the Chicago area
 * Shy, sensitive, introverted, sentimental
 * I'm [autistic](https://autisticadvocacy.org/about-asan/about-autism/)
-* Some of my favorite things are open source software, diversity, free culture, DevOps, automation, information freedom, programming, philosophy, video games, and coffee.
+* Some of my favorite things are open source computing, automation, the Elder Scrolls, and coffee.
 * Academia and science fanboy
 * I dislike monocultures, non-consensual power structures, and institutionalized closed-mindedness.
 * A notable quirk of mine is that some aspects of my personality are canine-like.
@@ -16,7 +16,7 @@ I'm Jeffrey Serio. Here are a few details about me:
 
 | **Repertoire**        |                                |
 | --------------------- | ------------------------------ |
-| Operating systems     | [Fedora Workstation](https://getfedora.org), Windows 10 |
+| Operating systems     | [Fedora](https://getfedora.org), Windows 10 |
 | Desktop environment   | GNOME, Windows DE              |
 | Text editor           | VSCode, NeoVim                 |
 | IRC client            | TheLounge, weechat             |
@@ -26,7 +26,7 @@ I'm Jeffrey Serio. Here are a few details about me:
 
 Below is an outline of things I'm interested in and would like to learn more about.
 
-* Computing
++ Computing
   + Golang
   + Python
   + REST APIs
@@ -46,9 +46,11 @@ Below is an outline of things I'm interested in and would like to learn more abo
 + Digital freedom, privacy, and net neutrality
 + The interplay between digital freedom/privacy and useful technologies
 + Rationality and cognitive biases
-* Mythology and folklore
-* [Free culture movement](https://en.wikipedia.org/wiki/Free-culture_movement)
-* [Hacker ethic](https://en.wikipedia.org/wiki/Hacker_ethic)
-* [Pirate Party](https://en.wikipedia.org/wiki/Pirate_Party)
-  + Something I really admire but which would probably hardly gain a foothold in corporate capitalist America.
-* Science fiction and high fantasy / medieval fantasy
++ Psychology
++ Language and Linguistics
++ Mythology and folklore
++ [Free culture movement](https://en.wikipedia.org/wiki/Free-culture_movement)
++ [Hacker ethic](https://en.wikipedia.org/wiki/Hacker_ethic)
++ [Pirate Party](https://en.wikipedia.org/wiki/Pirate_Party): Something I really admire but which is unlikely to gain a foothold in corporate capitalist America.
++ High fantasy / medieval fantasy and science fiction
++ Role-playing games
