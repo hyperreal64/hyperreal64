@@ -1,0 +1,8 @@
+<pre class="command-line language-bash" 
+    {{- with .Get "data-user" -}} data-user="{{ . }}" {{- end -}}
+    {{- with .Get "data-host" -}} data-host="{{ . }}" {{- end -}}
+    data-filter-output="(out)">
+    <code>
+        {{- .Inner -}}
+    </code>
+</pre>
