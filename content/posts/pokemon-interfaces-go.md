@@ -1,6 +1,6 @@
 +++
 title = "GoLang Interfaces Demonstrated with Pokemon"
-date = "2021-01-20T18:52:26-06:00"
+date = "2021-01-27T21:29:10-06:00"
 author = "Jeffrey Serio"
 authorTwitter = "hyperreal64" #do not include @
 cover = ""
@@ -15,20 +15,22 @@ showFullContent = false
 > I'm not an expert in Go, but I'm writing this for my own learning purposes. Please don't take this to be an authoritative source on Go's interfaces. :-)
 
 ## What is an interface?
-* An abstract concept that allows [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) in Go.
+* An abstract type that allows [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) in Go.
 * A protocol for types: a set of rules to which a type must adhere.
 * A *skeleton* that consists of the signatures of the methods that should be defined by the type.
 * Types that implement an interface *flesh out* the interface's methods.
 * For a type to implement an interface, it must define **all** of its methods.
 
 ## How to declare and implement an interface
-Go differs from other object-oriented languages in that it does not have [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)). Some OOP constructs, such as polymorphism, can be attained implicitly in Go by means of interfaces. The simplest way to think of an interface is as a contract or specification for a [data type](https://en.wikipedia.org/wiki/Data_type), while the data type describes some aspect of a real-world object that _does things_. An interface simply tells the type _what_ the object does. Types that implement an interface define _how_ an object should do the things. I will use the classic starter Pokemon to demonstrate how this works.
+Go differs from other object-oriented languages in that it does not have [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)). Some OOP constructs, such as polymorphism, can be attained implicitly in Go by means of interfaces. The simplest way to think of an interface is as a contract or specification for a [data type](https://en.wikipedia.org/wiki/Data_type). It is an abstract type, in contrast to concrete types like int, string, float, and bool. An interface simply tells the type _what_ action(s) / method(s) the object is allowed to execute. Types that implement an interface define _how_ those action(s) / method(s) are carried out. I will use the classic starter Pokemon to demonstrate how this works.
+
+In Go, there is no *implements* keyword like there is with interfaces in Java. Go's compiler uses the duck test to check for interface compliance: if it *looks*, *walks*, *quacks*, and does all the things that we can reasonably expect a duck to do, then for all intents and purposes it should be treated like a duck.
 
 In the most abstract, general sense, a Pokemon is a creature that *does things*. One of the things it does is attack other Pokemon in battle. So we can declare a Pokemon interface as follows:
 
 ```go
 type pokemon interface {
-    attack()
+    attack() string
 }
 ```
 
@@ -131,7 +133,7 @@ By definition, the empty interface has zero methods, and since a type has to be 
 
 ```go
 type pokemon interface {
-    attack(i interface{})
+    attack(i interface{}) string
 }
 ```
 
@@ -172,7 +174,7 @@ func main() {
 package main
 
 type pokemon interface {
-	attack(i interface{})
+	attack(i interface{}) string
 }
 ```
 
@@ -329,8 +331,117 @@ When we run the program, we get the following output.
 (out)
 (out)Bulbasaur uses vine whip on Charmander. It's not very effective.{{< /command-line >}}
 
+
+## The Beauty of Abstraction
+
+> The bigger the interface, the weaker the abstraction. --Rob Pike, [Gopherfest SV 2015](https://www.youtube.com/watch?v=PAAkCSZUG1c)
+
+To utilize the power of abstraction, we can implement the interface on all Pokemon types in a single method. Let's say we have a collection of Pokemon of various types, and we want to list their stats. We re-declare the `pokemon` interface to include a method called `stats()`. We also declare a new type called `list` as a slice of `pokemon` interfaces.:
+
+```go
+// pokemon/pokemon.go
+package main
+
+import "fmt"
+
+const (
+	super   = "super-effective!"
+	notvery = "not very effective."
+)
+
+var effect, oppName string
+
+type pokemon interface {
+	attack(i interface{}) string
+	stats()
+}
+
+type list []pokemon
+
+func (l list) stats() {
+	for _, v := range l {
+		v.stats()
+		fmt.Println()
+	}
+}
+```
+
+Now in `main.go`, we declare a variable of type `list` named `collection`, and we append to it each of the Pokemon values:
+```go
+// pokemon/main.go
+
+package main
+
+func main() {
+	bulbasaur := grass{
+		Name:     "bulbasaur",
+		GrassAtk: "vine whip",
+	}
+
+	squirtle := water{
+		Name:     "squirtle",
+		WaterAtk: "water gun",
+	}
+
+	charmander := fire{
+		Name:    "charmander",
+		FireAtk: "ember",
+	}
+
+	var collection list
+	collection = append(collection, bulbasaur, squirtle, charmander)
+
+	collection.stats()
+```
+
+If we try to run this program, the compiler will inform us that each of the Pokemon in `collection` are missing a corresponding `stats()` method. We see an error like this:
+```
+cannot use bulbasaur (variable of type grass) as pokemon value in argument to append: missing method stats
+```
+
+This is because we haven't defined the `stats()` method for each Pokemon type. Let's do that now by adding the following at the bottom of `grass.go`, `water.go`, and `fire.go`:
+
+```go
+// pokemon/grass.go
+...
+
+func (g grass) stats() {
+	fmt.Printf("Name: %s\nAttack: %s\n", g.Name, g.GrassAtk)
+}
+```
+
+```go
+// pokemon/water.go
+...
+func (w water) stats() {
+	fmt.Printf("Name: %s\nAttack: %s\n", w.Name, w.WaterAtk)
+}
+```
+
+```go
+// pokemon/fire.go
+...
+func (f fire) stats() {
+	fmt.Printf("Name: %s\nAttack: %s\n", f.Name, f.FireAtk)
+}
+```
+
+We run the program and get the following output:
+{{< command-line data-user="ash" data-host="kanto" >}}go run .
+(out)Name: bulbasaur
+(out)Attack: vine whip
+(out)
+(out)Name: squirtle
+(out)Attack: water gun
+(out)
+(out)Name: charmander
+(out)Attack: ember{{< /command-line >}}
+
+By standardizing our `pokemon` interface, we have reduced the amount of code we have to put in `main.go` to print the stats of all our Pokemon. We can define new Pokemon types like psychic, poison, electric without having to change or add code to `pokemon/pokemon.go`, as long as we implement the `attack(i interface{})` and `stats()` methods for each of them. 
+
 ## Recap
 
-* Interfaces are a contract for types. They tell types *what* the receiver object should do, while the types are responsible for defining *how* to do it. To implement an interface, a type must define **all** of the interface's methods.
-* The empty `interface{}` has zero methods, and thus all types can implement the empty interface.
-* Type switch checks the type that implements the given interface. This is useful for when want to operate on data based on its type. 
+* Interfaces are a contract for types. They tell types *what* action(s) / methods a receiver object should execute, while the types are responsible for defining *how* those actions are to be carried out. 
+* To implement an interface, a type must define **all** of the interface's methods. Go's compiler uses the duck test to check for interface compliance: if it looks, walks, quacks, and does everything one can reasonably expect a duck to do, then one should treat it as a duck.
+* The empty `interface{}` has zero methods, so all types can implement the empty interface.
+* Type switch checks the type that implements the given interface. This is useful for when we want to operate on data based on its type. 
