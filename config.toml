@@ -5,11 +5,12 @@ theme = "terminal"
 
 [params]
     contentTypeName = "posts"
-    themeColor = "blue"
+    themeColor = "pink"
     showMenuItems = 4
     fullWidthTheme = false
     centerTheme = true
     showLastUpdated = true
+    favicon = "https://icongr.am/material/coffee.svg?size=24&color=bd93f9"
 
 [languages]
     [languages.en]

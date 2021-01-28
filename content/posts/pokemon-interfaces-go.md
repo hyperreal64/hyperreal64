@@ -8,6 +8,7 @@ tags = ["golang", "interfaces", "programming"]
 keywords = ["golang", "go", "interfaces"]
 description = ""
 showFullContent = false
+toc = true
 +++
 
 > This article assumes the reader has some familiarity with programming and the basics of Go.
