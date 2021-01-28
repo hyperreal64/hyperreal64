@@ -25,7 +25,7 @@ toc = true
 ## How to declare and implement an interface
 Go differs from other object-oriented languages in that it does not have [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)). Some OOP constructs, such as polymorphism, can be attained implicitly in Go by means of interfaces. The simplest way to think of an interface is as a contract or specification for a [data type](https://en.wikipedia.org/wiki/Data_type). It is an abstract type, in contrast to concrete types like int, string, float, and bool. An interface simply tells the type _what_ action(s) / method(s) the object is allowed to execute. Types that implement an interface define _how_ those action(s) / method(s) are carried out. I will use the classic starter Pokemon to demonstrate how this works.
 
-In Go, there is no *implements* keyword like there is with interfaces in Java. Go's compiler uses the duck test to check for interface compliance: if it *looks*, *walks*, *quacks*, and does all the things that we can reasonably expect a duck to do, then for all intents and purposes it should be treated like a duck.
+In Go, there is no *implements* keyword like there is with interfaces in Java. Go's compiler uses the duck test to check for interface compliance: if it *looks*, *walks*, *quacks*, and does all the things that we can reasonably expect a duck to do, then for all intents and purposes we should treat it like a duck.
 
 In the most abstract, general sense, a Pokemon is a creature that *does things*. One of the things it does is attack other Pokemon in battle. So we can declare a Pokemon interface as follows:
 
