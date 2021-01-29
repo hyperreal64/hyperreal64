@@ -25,7 +25,7 @@ toc = true
 ## How to declare and implement an interface
 Go differs from other object-oriented languages in that it does not have [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)). Some OOP constructs, such as polymorphism, can be attained implicitly in Go by means of interfaces. The simplest way to think of an interface is as a contract or specification for a [data type](https://en.wikipedia.org/wiki/Data_type). It is an abstract type, in contrast to concrete types like int, string, float, and bool. An interface simply tells the type _what_ action(s) / method(s) the object is allowed to execute. Types that implement an interface define _how_ those action(s) / method(s) are carried out. I will use the classic starter Pokemon to demonstrate how this works.
 
-In Go, there is no *implements* keyword like there is with interfaces in Java. Go's compiler uses the duck test to check for interface compliance: if it *looks*, *walks*, *quacks*, and does all the things that we can reasonably expect a duck to do, then for all intents and purposes we should treat it like a duck.
+In Go, there is no *implements* keyword like there is with interfaces in Java. Go's compiler uses the duck test to check for interface compliance: if it *looks*, *walks*, *quacks*, and does all the things that we can reasonably expect a duck to do, then for all intents and purposes it *is* a duck.
 
 In the most abstract, general sense, a Pokemon is a creature that *does things*. One of the things it does is attack other Pokemon in battle. So we can declare a Pokemon interface as follows:
 
@@ -443,6 +443,6 @@ By standardizing our `pokemon` interface, we have reduced the amount of code we 
 ## Recap
 
 * Interfaces are a contract for types. They tell types *what* action(s) / methods a receiver object should execute, while the types are responsible for defining *how* those actions are to be carried out. 
-* To implement an interface, a type must define **all** of the interface's methods. Go's compiler uses the duck test to check for interface compliance: if it looks, walks, quacks, and does everything one can reasonably expect a duck to do, then one should treat it as a duck.
+* To implement an interface, a type must define **all** of the interface's methods. Go's compiler uses the duck test to check for interface compliance: if it looks, walks, quacks, and does everything one can reasonably expect a duck to do, then for all intents and purposes it *is* a duck.
 * The empty `interface{}` has zero methods, so all types can implement the empty interface.
-* Type switch checks the type that implements the given interface. This is useful for when we want to operate on data based on its type. 
+* Type switch checks the type that implements the given interface. 
