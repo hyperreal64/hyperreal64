@@ -1,13 +1,12 @@
 <link rel="stylesheet" href="https://unpkg.com/dracula-prism/css/dracula-prism.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-body { font-family: 'JetBrains Mono', monospace; }
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
 </style>
 
-<pre class="command-line language-bash" 
-    {{- with .Get "data-user" -}} data-user="{{ . }}" {{- end -}}
-    {{- with .Get "data-host" -}} data-host="{{ . }}" {{- end -}}
-    data-filter-output="(out)">
+<pre class="line-numbers language-go">
     <code>
         {{- .Inner -}}
     </code>
