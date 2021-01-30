@@ -11,9 +11,7 @@ showFullContent = false
 toc = true
 +++
 
-> This article assumes the reader has some familiarity with programming and the basics of Go.
-
-> I'm not an expert in Go, but I'm writing this for my own learning purposes. Please don't take this to be an authoritative source on Go's interfaces. :-)
+> I'm not an expert in Go, but I'm writing this for my own learning purposes. It very much a work-in-progress, so please don't take this to be an authoritative source on Go's interfaces. There are bound to be mistakes in this, so I'd be happy to be informed of them. This article assumes the reader has some familiarity with programming and the basics of Go. My intended audience is...well, mostly me! So it's pretty likely that in explaining this to myself, I have taken some things for granted that anyone outside of my own mind would typically want explained.
 
 ## What is an interface?
 * An abstract type that allows [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) in Go.
@@ -63,7 +61,7 @@ package main
 import "fmt"
 
 type pokemon interface {
-	attack()
+	attack() string
 }
 
 type grass struct {
@@ -75,20 +73,35 @@ func (g grass) attack() string {
 	return fmt.Sprintf("%s uses %s!\n", g.Name, g.GrassAtk)
 }
 
+func (g grass) pokeCry() string {
+	return fmt.Sprintf("%s!\n", g.Name)
+}
+
+func isAPokemon(p pokemon) {
+	fmt.Println(p.attack())
+	fmt.Println(p.pokeCry())
+}
+
 func main() {
 	bulbasaur := grass{
 		Name:     "Bulbasaur",
 		GrassAtk: "vine whip",
 	}
 
-	fmt.Println(bulbasaur.attack())
+	// implicit: checks if bulbasaur as a pokemon type can use the attack() and pokeCry() methods.
+	fmt.Println(isAPokemon(bulbasaur))
 }{{< /code >}}
 
-If we run this program in the console, we get the following result:
-{{< command-line data-user="ash" data-host="kanto" >}}go run main.go
-(out)Bulbasaur uses vine whip!{{< /command-line >}}
+The `isAPokemon` function accepts a pokemon type. The body of the function calls the `attack()` and `pokeCry()` methods. The `attack()` method belongs to the `pokemon` interface, but the `pokeCry()` method does not, so if we try to run this we get an error that `type pokemon has no field or method pokeCry`. Let's fix that by adding the `pokeCry()` method signature to the `pokemon` interface.
 
-You can run the above code in the [Go Playground](https://play.golang.org/p/UkEeEOuuqpw).
+{{< code >}}type pokemon interface {
+	attack() string
+	pokeCry() string
+}{{< /code >}}
+
+We see that "Bulbasaur uses vine whip!" and "Bulbasaur!" are both printed to the console.
+
+You can run the above code in the [Go Playground](https://play.golang.org/p/G-Lc2-Iy1GJ).
 
 We now declare other types of Pokemon:
 
@@ -210,7 +223,9 @@ go run .
 (out)
 (out)Bulbasaur uses vine whip against {Charmander ember}!{{< /command-line >}}
 
-We can see that the entire type value is printed for the Pokemon receiving the attack, which is not the result we want. We want only to display the Pokemon's name, as well as a description of the attack's effectiveness--whether it was 'super-effective' or 'not very effective'--depending on its type. To do this, we need to customize each type's `attack()` method implementation using a Go feature called **type switch**, which is a switch statement for types.
+The empty `interface{}` accepts any type as an argument, so we can pass any Pokemon type to its call from the `main()` function, but will only work as long as the type contains fields for name and attack.
+
+If we run this in the console, we see that the entire type value is printed for the Pokemon receiving the attack, which is not the result we want. We want only to display the Pokemon's name, as well as a description of the attack's effectiveness--whether it was 'super-effective' or 'not very effective'--depending on its type. To do this, we need to customize each type's `attack()` method implementation using a Go feature called **type switch**, which is a switch statement for types.
 
 ## Type switch on an interface
 
@@ -304,7 +319,7 @@ When we run the program, we get the following output.
 
 > The bigger the interface, the weaker the abstraction. --Rob Pike, [Gopherfest SV 2015](https://www.youtube.com/watch?v=PAAkCSZUG1c)
 
-To utilize the power of abstraction, we can implement the interface on all Pokemon types in a single method. Let's say we have a collection of Pokemon of various types, and we want to list their stats. We re-declare the `pokemon` interface to include a method called `stats()`. We also declare a new type called `list` as a slice of `pokemon` interfaces.:
+Let's say we have a collection of Pokemon of various types, and we want to list their stats. We re-declare the `pokemon` interface to include a method called `stats()`. We also declare a new type called `list` as a slice of `pokemon` types:
 
 {{< code >}}// pokemon/pokemon.go
 package main
@@ -313,13 +328,12 @@ import "fmt"
 
 const (
 	super   = "super-effective!"
-	notvery = "not very effective."
+	notVery = "not very effective."
 )
 
 var effect, oppName string
 
 type pokemon interface {
-	attack(i interface{}) string
 	stats()
 }
 
@@ -393,7 +407,7 @@ We run the program and get the following output:
 (out)Name: charmander
 (out)Attack: ember{{< /command-line >}}
 
-By standardizing our `pokemon` interface, we have reduced the amount of code we have to put in `main.go` to print the stats of all our Pokemon. We can define new Pokemon types like psychic, poison, electric without having to change or add code to `pokemon/pokemon.go`, as long as we implement the `attack(i interface{})` and `stats()` methods for each of them. 
+By standardizing our `pokemon` interface, we have reduced the amount of code we have to put in `main.go` to print the stats of all our Pokemon. We can define new Pokemon types like psychic, poison, and electric without having to change or add code to `pokemon/pokemon.go`, as long as we define the `stats()` methods for each of them. 
 
 ## Recap
 

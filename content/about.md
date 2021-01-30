@@ -8,7 +8,7 @@ I'm Jeffrey Serio. Here are a few details about me:
 * Based in the Chicago area
 * Shy, sensitive, introverted, sentimental
 * I'm [autistic](https://autisticadvocacy.org/about-asan/about-autism/)
-* Some of my favorite things are the [hacker ethic](https://en.wikipedia.org/wiki/Hacker_ethic), automation, the [Elder Scrolls](https://en.wikipedia.org/wiki/The_Elder_Scrolls), and coffee.
+* Some of my favorite things are [free culture](https://en.wikipedia.org/wiki/Free-culture_movement), automation, the [Elder Scrolls](https://en.wikipedia.org/wiki/The_Elder_Scrolls), and coffee.
 * Academia and science fanboy
 * I dislike monocultures, non-consensual power structures, and institutionalized closed-mindedness.
 * A notable quirk of mine is that some aspects of my personality are canine-like.
