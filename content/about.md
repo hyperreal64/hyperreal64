@@ -49,7 +49,7 @@ Below is an outline of things I'm interested in and would like to learn more abo
 + Psychology
 + Language and Linguistics
 + Mythology and folklore
-+ [Free culture movement](https://en.wikipedia.org/wiki/Free-culture_movement)
++ [Hacker culture](https://en.wikipedia.org/wiki/Hacker_culture)
 + [Hacker ethic](https://en.wikipedia.org/wiki/Hacker_ethic)
 + [Pirate Party](https://en.wikipedia.org/wiki/Pirate_Party): Something I really admire but which is unlikely to gain a foothold in corporate capitalist America.
 + High fantasy / medieval fantasy and science fiction
