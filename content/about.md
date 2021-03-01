@@ -7,7 +7,6 @@ draft: false
 I'm Jeffrey Serio. Here are a few details about me:
 * Based in the Chicago area
 * Shy, sensitive, introverted, sentimental
-* I'm [autistic](https://autisticadvocacy.org/about-asan/about-autism/)
 * Some of my favorite things are [information freedom](https://en.wikipedia.org/wiki/Freedom_of_information), automation, the [Elder Scrolls](https://en.wikipedia.org/wiki/The_Elder_Scrolls), and coffee.
 * Academia and science fanboy
 * I dislike monocultures, non-consensual power structures, and institutionalized closed-mindedness.
@@ -23,6 +22,9 @@ I'm Jeffrey Serio. Here are a few details about me:
 | Shell                 | zsh (Oh My Zsh), PowerShell    |
 | Coffee                | Very dark roast served black   |
 
+I automate my desktop setup on Linux with [Ansible](https://www.ansible.com/) and my terminal environment on Windows with [chezmoi](https://www.chezmoi.io/):
+* [My Ansible repo](https://github.com/hyperreal64/ansible)
+* [My Windows dotfiles repo](https://git.envs.net/hyperreal/dotfiles-windows)
 
 Below is an outline of things I'm interested in and would like to learn more about.
 
