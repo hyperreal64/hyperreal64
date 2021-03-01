@@ -1,6 +1,6 @@
 +++
 title = "GoLang Interfaces Demonstrated with Pokemon"
-date = "2021-01-27T21:29:10-06:00"
+date = "2021-03-01T06:59:46-06:00"
 author = "Jeffrey Serio"
 authorTwitter = "hyperreal64" #do not include @
 cover = ""
@@ -25,7 +25,7 @@ Go differs from other object-oriented languages in that it does not have [classe
 
 In Go, there is no *implements* keyword like there is with interfaces in Java. Go's compiler uses the duck test to check for interface compliance: if it *looks*, *walks*, *quacks*, and does all the things that we can reasonably expect a duck to do, then for all intents and purposes it *is* a duck.
 
-In the most abstract, general sense, a Pokemon is a creature that *does things*. One of the things it does is attack other Pokemon in battle. So we can declare a Pokemon interface as follows:
+In the most abstract, general sense, a Pokemon is a creature that *does things*. One of the things it does is attack other Pokemon in battle. So we can declare a Pokemon attacker interface as follows:
 
 {{< code >}}type pokemon interface {
     attack() string
@@ -52,7 +52,7 @@ This method will get the name and attack of the grass type Pokemon and return a 
     GrassAtk: "vine whip",
 }{{< /code >}}
 
-We can combine the above code in a single file:
+To demonstrate what happens when a method does not belong to an interface, we'll define a `pokeCry()` method, which simply prints the Pokemon's name as an exclamation to emulate its cry. Unfortunately we cannot account for inflection and intonation in an easy way, so for the purposes of this demo we'll just use the Pokemon's name. We can combine the above code in a single file:
 
 {{< code >}}// main.go
 
@@ -229,7 +229,7 @@ If we run this in the console, we see that the entire type value is printed for 
 
 ## Type switch on an interface
 
-We can then define `super` and `notVery` as constants, and `effect` and `oppName` as variables in `pokemon.go`. These constants and variables are used in the attack method's definition, and we define them here to avoid repeting them for each type. They are just strings to use in the attack method's return value as parts of a formatted string.
+We can then define `super` and `notVery` as constants, and `effect` and `oppName` as variables in `pokemon.go`. These constants and variables are used in the attack method's definition, and we define them here to avoid repeting them for each type. They are just strings to use in the attack method's return value as parts of a formatted output string.
 {{< code >}}// pokemon/pokemon.go
 
 package main
