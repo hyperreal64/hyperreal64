@@ -1,11 +1,12 @@
 ---
 title: "About"
-date: 2021-03-01T07:00:21-06:00
+date: 2021-03-12T23:57:29-06:00
 draft: false
 ---
 
 I'm Jeffrey Serio. Here are a few details about me:
 * Based in the Chicago area
+* Born on March 15th, 1988
 * Shy, sensitive, introverted, sentimental
 * Some of my favorite things are [information freedom](https://en.wikipedia.org/wiki/Freedom_of_information), automation, the [Elder Scrolls](https://en.wikipedia.org/wiki/The_Elder_Scrolls), and coffee.
 * Academia and science fanboy
@@ -13,18 +14,20 @@ I'm Jeffrey Serio. Here are a few details about me:
 * A notable quirk of mine is that some aspects of my personality are canine-like.
 * I prefer masculine or neutral gender pronouns.
 
+I have schizoaffective disorder (depressive type) and OCD. I was diagnosed in September of 2007 and have been in treatment and medicated since 2006.
+
 | **Repertoire**        |                                |
 | --------------------- | ------------------------------ |
 | Operating systems     | [Fedora](https://getfedora.org), Windows 10 |
 | Desktop environment   | GNOME, Windows DE              |
 | Text editor           | VSCode, NeoVim                 |
-| IRC client            | TheLounge, weechat             |
+| IRC client            | Element.io, weechat             |
 | Shell                 | zsh (Oh My Zsh), PowerShell    |
 | Coffee                | Very dark roast served black   |
 
 I automate my desktop setup on Linux with [Ansible](https://www.ansible.com/) and my terminal environment on Windows with [chezmoi](https://www.chezmoi.io/):
-* [My Ansible repo](https://github.com/hyperreal64/ansible)
-* [My Windows dotfiles repo](https://git.envs.net/hyperreal/dotfiles-windows)
+* [My Ansible repo](https://bitbucket.org/hyperreal64/ansible)
+* [My Windows dotfiles repo](https://bitbucket.org/hyperreal64/dotfiles-windows)
 
 Below is an outline of things I'm interested in and would like to learn more about.
 
