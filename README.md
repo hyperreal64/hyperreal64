@@ -1,5 +1,7 @@
 ### hyperreal64, aka unixcat64
 
-To view my Git projects, go to [git.unixc.at](https://git.unixc.at).
+I'm an open source and free knowledge advocate, sysadmin, and freelance programmer.
+
+To view my Git projects, go to [git.envs.net](https://git.envs.net/hyperreal)
 
 To view my homepage, go to [unixc.at](https://unixc.at)
