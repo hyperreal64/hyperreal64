@@ -1,7 +1,5 @@
-### hyperreal64, aka unixcat64
+### hyperreal64
 
-I'm an open source and free knowledge advocate, sysadmin, and freelance programmer.
-
-To view my Git projects, go to [git.envs.net](https://git.envs.net/hyperreal)
+Free/libre software geek, open access & digital rights advocate, RPG enthusiast, ❤️ coffee. He/they.
 
 To view my homepage, go to [unixcat.coffee](https://unixcat.coffee)
