@@ -1,5 +1,7 @@
 # hyperreal64
 
+[![hyperreal64's GitHub stats](https://github-readme-stats.vercel.app/api?username=hyperreal64&bg_color=161320&text_color=D9E0EE&icon_color=DDB6F2&title_color=96CDFB)](https://github.com/anuraghazra/github-readme-stats)
+
 * Based in the Chicago area.
 * Born on March 15th, 1988.
 * Sensitive, introverted, intuitive.
@@ -56,5 +58,3 @@ My stomping grounds around the Internet:
 You can also find me as hyperreal on the Libera.chat and Tilde.chat IRC networks.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N2CT2JG)
-
-[![hyperreal64's GitHub stats](https://github-readme-stats.vercel.app/api?username=hyperreal64&bg_color=161320&text_color=D9E0EE&icon_color=DDB6F2&title_color=96CDFB)](https://github.com/anuraghazra/github-readme-stats)
