@@ -15,7 +15,7 @@
 * I'm genderfluid. More specifically, I'm a demi-gendered man, which means I identify as mostly masculine and have some feminine markers.
 * I have schizoaffective disorder and OCD. I was diagnosed in September of 2007 and have been taking medication since 2006. Secondary symptoms that stem from these include social phobia, selective mutism, speech articulation issues, and agoraphobia.
 * I'm an atheist/naturalist and secular humanist.
-* Politically, I'm a pragmatic libertarian socialist.
+* Politically, I'm a pragmatic libertarian socialist. I support rationality, democracy, pluralism, and the ideals of the [Pirate Party](https://en.wikipedia.org/wiki/Pirate_Party).
 
 ## Computing Repertoire
 | Category | Software |
