@@ -9,13 +9,30 @@
 * Aspiring system administrator and programmer.
 * I have a Bachelor of Science in Computer Science from University of Illinois-Springfield.
 * Mental illness and mental health advocate.
-* Favorite things: free and open software/culture/content/access, diversity, automation, programming, logic, video games, role-playing games, language, and coffee.
+* Favorite things: free and open software/culture/content/access, diversity, programming, logic, video games, role-playing games, language, and coffee.
 * I dislike monocultures, non-consensual power structures, and closed-mindedness.
 * He/him/his, they/them/their
 * I'm genderfluid. More specifically, I'm a demi-gendered man, which means I identify as mostly masculine and have some feminine markers.
 * I have schizoaffective disorder and OCD. I was diagnosed in September of 2007 and have been taking medication since 2006. Secondary symptoms that stem from these include social phobia, selective mutism, speech articulation issues, and agoraphobia.
+* I'm an atheist/naturalist and secular humanist.
+* Politically, I'm a pragmatic libertarian socialist.
+
+## Computing Repertoire
+| Category | Software |
+| -------- | -------- |
+| OS       | [Fedora](https://getfedora.org) |
+| Text editor | [Doom Emacs](https://github.com/doomemacs/doomemacs) |
+| Web browser | Firefox and Brave |
+| Shell    | Zsh + Tmux |
+| Gemini browser | [Lagrange](https://gmi.skyjake.fi/lagrange/) and [Amfora](https://github.com/makeworld-the-better-one/amfora) |
 
 I'm very interested in how other people do their computing. I enjoy seeing workstation setups, dotfiles, what software and tools others use as daily drivers, etc.
+
+## Links
+* [Techne: Reference guides and notes I've written](https://hyperreal64.github.io)
+* [Keyoxide](https://keyoxide.org/hkp/hyperreal64%40.pm.me)
+* [Gemini capsule via gemini-to-web proxy: gemini://hyperreal.coffee](https://proxy.vulpes.one/gemini/hyperreal.coffee)
+* [Zsh Manual](https://zsh-manual.netlify.app)
 
 ## Interests
 
@@ -46,12 +63,9 @@ Below is an outline of things I'm interested in and would like to learn more abo
 
 ## Contact
 
-* [Keyoxide](https://keyoxide.org/hkp/hyperreal64%40.pm.me)
-
 My stomping grounds around the Internet:
 * [Mastodon: @hyperreal@mastodon.hyperreal.coffee](https://mastodon.hyperreal.coffee)
 * [Matrix](@hyperreal:matrix.envs.net)
-* [Gemini capsule: gemini://hyperreal.coffee](gemini://hyperreal.coffee)
 * [Discord](hyperreal#4715)
 * [Email: hyperreal@fedoraproject.org](mailto:hyperreal@fedoraproject.org)
 
