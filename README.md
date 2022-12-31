@@ -42,6 +42,7 @@ Below is an outline of things I'm interested in and would like to learn more abo
 * Python, Rust, Go
 * Unix/Linux system administration
 * Computer networking
+* Infosec
 * Bash, Zsh, shell scripting
 * Immutable operating systems
 * Containerized workflows
