@@ -16,7 +16,6 @@
 * I have schizoaffective disorder and OCD. I was diagnosed in September of 2007 and have been taking medication since 2006. Secondary symptoms that stem from these include social phobia, selective mutism, speech articulation issues, and agoraphobia.
 * I'm an atheist/naturalist and secular humanist.
 * Politically, I'm a pragmatic libertarian socialist. I support rationality, democracy, pluralism, and the ideals of the [Pirate Party](https://en.wikipedia.org/wiki/Pirate_Party).
-* In this head, we believe: science is real, Black Lives Matter, LGBTQ+ lives matter, womens' rights are human rights, and kindness is everything.
 
 ## Computing Repertoire
 * OS: [Fedora](https://getfedora.org)
