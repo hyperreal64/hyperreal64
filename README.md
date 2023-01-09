@@ -19,13 +19,11 @@
 * In this head, we believe: science is real, Black Lives Matter, LGBTQ+ lives matter, womens' rights are human rights, and kindness is everything.
 
 ## Computing Repertoire
-| Category | Software |
-| -------- | -------- |
-| OS       | [Fedora](https://getfedora.org) |
-| Text editor | [Doom Emacs](https://github.com/doomemacs/doomemacs) |
-| Web browser | Firefox and Brave |
-| Shell    | Zsh + Tmux |
-| Gemini browser | [Lagrange](https://gmi.skyjake.fi/lagrange/) and [Amfora](https://github.com/makeworld-the-better-one/amfora) |
+* OS: [Fedora](https://getfedora.org)
+* Text editor: [Doom Emacs](https://github.com/doomemacs/doomemacs)
+* Web browser: Firefox
+* Shell: [Z-shell](https://zsh-manual.netlify.app) + [Zellij](https://zellij.dev)
+* Gemini browser: [Lagrange](https://gmi.skyjake.fi/lagrange/) and [Amfora](https://github.com/makeworld-the-better-one/amfora)
 
 I'm very interested in how other people do their computing. I enjoy seeing workstation setups, dotfiles, what software and tools others use as daily drivers, etc.
 
